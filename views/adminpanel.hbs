@@ -1,0 +1,26 @@
+<div class="container">
+    <div class="d-flex justify-content-between">
+      <h1>WELCOME ADMIN</h1>
+      <a class="btn btn-primary mt-2 " href="/signin/adminlogout" style="width: 8rem; height:2.5rem" type="submit">Log Out</a>
+    </div>
+
+    <ul class="list-group">
+      {{#each products}}
+      <li class="list-group-item active">Apple{{this.title}}</li>
+      <li class="list-group-item">{{this.category}}</li>
+      <li class="list-group-item"><img width="100rem" height="auto" src="{{this.image}}"></li>
+      {{!-- <li class="list-group-item">Porta ac consectetur ac</li>
+      <li class="list-group-item">Vestibulum at eros</li> --}}
+      {{/each}}
+    </ul>
+
+    <ul class="list-group">
+      {{#each product}}
+      <li class="list-group-item active">Samsung{{this.name}}</li>
+      <li class="list-group-item">{{this.price}}</li>
+      <li class="list-group-item"><img width="100rem" height="auto" src="{{this.image}}"></li>
+      {{!-- <li class="list-group-item">Porta ac consectetur ac</li>
+      <li class="list-group-item">Vestibulum at eros</li> --}}
+      {{/each}}
+    </ul>
+</div>
